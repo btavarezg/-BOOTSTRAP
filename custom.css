@@ -7,3 +7,12 @@ tr.bg-warning{
 tr.bg-success{
     color:yellow
 }
+
+.bg-dark {
+    background-color: #282A35 !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    font-size: larger;
+    font-weight: 600;
+}
