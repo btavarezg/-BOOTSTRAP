@@ -16,3 +16,13 @@ tr.bg-success{
     font-size: larger;
     font-weight: 600;
 }
+.navbar{
+    padding: 0;
+}
+.dropdown-menu.show{
+    z-index: 8888888888;
+}
+
+.nav-item.active {
+    background-color: #04AA6D;
+}

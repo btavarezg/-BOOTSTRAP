@@ -7,23 +7,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="custom.css" rel="stylesheet"/>
+    <style>
+        #bootstrap {
+            background: url("boot.png") rgb(47, 47, 47);
+            min-height: 200px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-   
-    <div class="container-fluid p-0 bg-white text-success text-center">
-        <h1>How to make a Bootstrap Website </h1>
-    </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm bg-white navbar-white navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="W$.png" alt="Cinque Terre" width="60" height="60">
+                <img src="W$.png" alt="Cinque Terre" width="77" height="75">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="topNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: bold;">
+                              Tutorials
+                            </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="HOWTO.html">Bootstrap information</a></li>
+                            <li><a class="dropdown-item" href="HOWTO.html">Bootstrap information</a></li>
+                            <li><a class="dropdown-item" href="HOWTO.html">Bootstrap information</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HTML.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CSS.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="JAVASCRIPT.html">JAVASCRIPT</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="bottomNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">INDEX</a>
                     </li>
                     <li class="nav-item">
@@ -42,7 +79,7 @@
                         <a class="nav-link" href="PHP.html">PHP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="HOWTO.html">BOOTSTRAP</a>
+                        <a class="nav-link" href="HOWTO.html" >BOOTSTRAP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="W3css.html">W3.CSS</a>
@@ -61,20 +98,18 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-5 bg-white text-black">
-        <p style="font-size: 40px;">Bootstrap 5 tutorial (By the SUPERIOR website)</p>
-    </div>
-    <nav class="navbar bg-light float-start" >
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">INDEX</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="HOWTO.html">BOOTSTRAP</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <h1 style="text-align: center;"> List of sites</h1>
+    <div class="row">
+        <div class="col-sm-12 bg-danger text-center text-white"><b><span>Sites</span></b></div>
+        <a href="HOWTO.html" class="col-sm-3" id="bootstrap"></a>
+        <div class="col-sm-3 bg-success"><a style="color:#FF00FF" href="HTML.html" ><img src="HTML.png" width="300px" height="200px"></a></div>
+        <div class="col-sm-3 bg-warning"><a class="text-dark" href="Java.html" >Java</a></div>
+        <div class="col-sm-3 bg-white"><a style="color:#990011FF;"   href="C.html" >C</a></div>
+        <div class="col-sm-3" style="background-color: #390879;"><a style="color:#b8df10;"  href="C++.html" >C++</a></div>
+        <div class="col-sm-3" style="background-color: #bdfff6;"><a style="color:#e23c52;" href="JAVASCRIPT.html" >JavaScript</a></div>
+        <div class="col-sm-3" style="background-color: #030E3F;"><a style="color:#F49F1C;"  href="PHP.html" >PHP</a></div>
+        <div class="col-sm-3 bg-info"><a style="color:#5b0e2d;" href="PYTHON.html" >Python</a></div>
+        <div class="col-sm-3" style="background-color:#ffa781;"><a style="color:#5b0e2d;"  href="W3css.html" >The weaker CSS</a></div>
+      </div>
 </body>
 </html>
