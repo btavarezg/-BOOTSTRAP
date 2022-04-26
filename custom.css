@@ -1,3 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
+@media (min-height : 300px){
+    #bar ul{
+        position:sticky;
+        top:0
+    }
+}
+#bar .navbar-nav .nav-item .nav-link{
+    display:block;
+    padding: 0;
+}
 tr.bg-danger {
     color: aqua
 }
@@ -31,6 +44,9 @@ tr.bg-success{
 }
 .dropdown-menu.show{
     z-index: 500000;
+}
+.bg-warning{
+    background-color: #FEFFCB !important; 
 }
 
 
