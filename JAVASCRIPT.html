@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="custom.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="custom.css" rel="stylesheet"/>
 </head>
 <body>
    
-    <div class="container-fluid p-0 bg-white text-success text-center">
-        <h1>API</h1>
-    </div>
     <nav class="navbar navbar-expand-sm bg-white navbar-white navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -60,13 +57,13 @@
                         <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i>  </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="HTML.html">HTML</a>
+                        <a class="nav-link"  href="HTML.html">HTML</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="CSS.html">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="JAVASCRIPT.html" style="background-color: #04AA6D;">JAVASCRIPT</a>
+                        <a class="nav-link" style="background-color: #04AA6D;" href="JAVASCRIPT.html">JAVASCRIPT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="PYTHON.html">PYTHON</a>
@@ -81,7 +78,7 @@
                         <a class="nav-link" href="W3css.html" >W3.CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Java.html" >JAVA</a>
+                        <a class="nav-link" href="Java.html">JAVA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="C.html">C</a>
@@ -94,20 +91,78 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-5 bg-white text-black">
-        <p style="font-size: 40px;">JAVASCRIPT tutorial (By the SUPERIOR website)</p>
-    </div>
-    <nav class="navbar bg-light float-start" >
-        <div class="container-fluid">
+
+    <div class="row">
+    <div class=" col-2">
+    <nav class="navbar bg-light  sticky-top" style="top:50px" >
+    
+        <div  id="bar">
+            <h4 style="font-size:21px">JS tutorial</h4>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">INDEX</a>
+                    <a class="nav-link active" href="JAVASCRIPT.html">JS HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="HOWTO.html">BOOTSTRAP</a>
+                    <a class="nav-link" href="JS1.html">JS Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS2.html">JS Where To</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS3.html">JS Output</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS4.html">JS Statements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS5.html">JS Syntax</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS6.html">JS Comments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS7.html">JS Variables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS8.html">JS Data Types</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS9.html">JS Functions</a>
                 </li>
             </ul>
+            
         </div>
+    
     </nav>
+</div>
+    <div class="col-9">
+    <div class="container-fluid p-1 bg-white text-black">
+        <p style="font-size: 40px;">JavaScript tutorial (By the SUPERIOR website)</p>
+    </div>
+    <div class="container text-black" style="background-color:#D9EEE1">
+            <p>JavaScript is the world's most popular programming language.</p>
+            <p>JavaScript is the programming language of the Web.</p>
+            <p>JavaScript is easy to learn.</p>
+            <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+            <br>
+    </div>
+    <hr>
+    <div class="container-sm col-10 justify-content-center" style="background-color: rgb(220, 218, 218);">
+        <h4 class="font-weight-light row justify-content-start" style="padding-left: 20px;padding-bottom: 10px;"> HTML Example</h4>
+        <div style="background-color:white">
+        <h2 >My First JavaScript</h2>
+        <br>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
+        <br>
+        </div>
+        <br>
+    </div>
+    <div> <a class="btn btn-success" href="index.html" role="button">&lt; Home</a>
+        <a class="btn btn-success" style="float:right;" href="JS1.html" role="button">Next &gt;</a></div>
+    </div>
 </body>
 </html>

@@ -93,7 +93,7 @@
     </nav>
     <div class="row">
     <div class=" col-2">
-    <nav class="navbar bg-light" style="overflow-y: scroll;" >
+    <nav class="navbar bg-light  sticky-top" style="top:50px" >
     
         <div  id="bar">
             <h4 style="font-size:21px">Bootstrap 5 tutorial</h4>
@@ -109,41 +109,7 @@
         </div>
     
     </nav>
-    <main>
-        <section id="1">
-            <a href="HOWTO.html">1</a>
-
-        </section>
-        <section id="2">
-            <a href="getstartedbootstrap.html">2</a>
-            
-        </section>
-        <section id="3">
-            <a href="HOWTO.html">3</a>
-            
-        </section>
-    </main>
-    <script>
-        let bar = document.querySelectorAll("#bar .navbar-nav .nav-item .nav-link")
-        let mainSelection = document.querySelectorAll("main section ")
-        let lastId;
-        let cur=[];
-        window.addEventListener("scroll", event =>{
-            let fromTop = window.scrollY;
-
-            bar.forEach(link =>{
-                let section = document.querySelector(link.hash);
-
-                if(section.offsetTop <= fromTop &&
-               section.offsetTop + section.offsetHeight > fromTop ){
-                   link.classList.add("current");
-               }else{
-                   link.classList.remove("current");
-               }
-            })
-        })
-        </script>
-    </div>
+</div>
     <div class="col-9">
     <div class="container-fluid p-1 bg-white text-black">
         <p style="font-size: 40px;">Bootstrap 5 tutorial (By the SUPERIOR website)</p>

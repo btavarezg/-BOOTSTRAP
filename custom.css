@@ -53,7 +53,7 @@ tr.bg-success{
 #bar .nav-link {
     color:black;
     padding:0;
-    font-size:15px;
+    font-size:18px;
 }
 #bar .nav-link:hover{
     color:black;
@@ -71,4 +71,7 @@ tr.bg-success{
     color:rgb(255, 255, 255);
     padding:0;
     background-color: #04AA6D;
+}
+.danke{
+    color:rgb(165,42,42)
 }
